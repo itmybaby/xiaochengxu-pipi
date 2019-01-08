@@ -1,6 +1,6 @@
 const config = {
-  api_base_url: "http://ww.baidu1.com/",
-  appkey: "212asdasdwf"
+  api_base_url:"http://bl.7yue.pro/v1/",
+  appkey: "K5H3SiFRY9qLzs0n"
 }
 
 export {

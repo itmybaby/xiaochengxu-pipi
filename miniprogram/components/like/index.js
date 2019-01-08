@@ -1,4 +1,3 @@
-// components/like/index.js
 Component({
   /**
    * 组件的属性列表
@@ -33,6 +32,10 @@ Component({
         count: count,
         like: !like
       })
+
+      //激活
+      let behavior = this.properties.like?"like":"cancle"
+      this.triggerEvent('like', { behavior:behavior},{})
     }
   }
 })
