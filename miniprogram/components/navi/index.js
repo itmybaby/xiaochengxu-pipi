@@ -16,7 +16,7 @@ Component({
     disLeftSrc: "images/navi@left@white.png",
     leftSrc: "images/navi@left@black.png",
     disRightSrc: "images/navi@right@white.png",
-    rightSrc: "images/navi@right@black.png",
+    rightSrc: "images/navi@right@black.png", 
   },
 
   /**

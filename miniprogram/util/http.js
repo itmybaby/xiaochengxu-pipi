@@ -3,7 +3,8 @@ import {config} from "../config.js"
 const tips={
   1:'抱歉。出现了一个错误',
   1005:'用户不存在',
-  2000:'appkey无效'
+  2000:'appkey无效',
+  1006:'服务器错误'
 }
 class HTTP {
   request(params) {
