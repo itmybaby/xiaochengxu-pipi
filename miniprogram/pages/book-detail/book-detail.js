@@ -1,43 +1,47 @@
 import {
   BookModel
 } from '../../models/book.js'
+
 const bookModel = new BookModel()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    books:[]
+    book:null,
+    comments: [],
+    likeStatus:false,
+    likeCount:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    const hotList = bookModel.getHotList()
-    hotList.then(res =>{
+    console.log(options)
+    const bid = options.bid
+    const detail = bookModel.getDetail(bid)
+    const comments = bookModel.getComments(bid)
+    const likeStatus = bookModel.getLikeStatus(bid)
+
+    detail.then(res=>{
       this.setData({
-        books: res
+        book:res
       })
     })
-    // const promise = new Promise((resolve, reject) => {
-
-    //   //进行中 已成功 已失败 凝固
-    //   wx.getSystemInfo({
-    //     success: res =>
-    //       resolve(res),
-    //     fail: (error) => {
-    //       reject(res)
-    //     }
-    //   })
-    // })
-    // promise.then((res) => {
-    //   console.log(res)
-    // }, (error) => {
-    //   console.log(error)
-    // })
-
+    comments.then(res => {
+      this.setData({
+        comments: res.comments
+      })
+    })
+    likeStatus.then(res => {
+      this.setData({
+        likeStatus: res.like_status,
+        likeCount: res.fav_nums
+      })
+    })
   },
 
   /**

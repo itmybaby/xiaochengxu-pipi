@@ -9,7 +9,8 @@
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/chooseLib",
+    "pages/book-detail/book-detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,22 +25,22 @@
     "color": "#c7c7c7",
     "list": [
       {
-        "selectedIconPath": "images/tabBar@classicSelected.png",
+        "selectedIconPath": "images/tab/tabBar@classicSelected.png",
         "pagePath": "pages/classic/classic",
         "text": "流行",
-        "iconPath": "images/tabBar@classic.png"
+        "iconPath": "images/tab/tabBar@classic.png"
       },
       {
-        "selectedIconPath": "images/tabBar@bookSelected.png",
+        "selectedIconPath": "images/tab/tabBar@bookSelected.png",
         "pagePath": "pages/book/book",
         "text": "图书",
-        "iconPath": "images/tabBar@book.png"
+        "iconPath": "images/tab/tabBar@book.png"
       },
       {
-        "selectedIconPath": "images/tabBar@likeSelected.png",
+        "selectedIconPath": "images/tab/tabBar@likeSelected.png",
         "pagePath": "pages/my/my",
         "text": "喜欢",
-        "iconPath": "images/tabBar@like.png"
+        "iconPath": "images/tab/tabBar@like.png"
       }
     ]
   }
