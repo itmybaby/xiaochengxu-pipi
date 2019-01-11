@@ -67,7 +67,7 @@
 .num {
     margin-left: 10rpx;
     font-size: 22rpx;
-    color: #aaa; 
+    color: #aaa;
 }
 
 /* .comment-container>v-tag:nth-child(1)>view {

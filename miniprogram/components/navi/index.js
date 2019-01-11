@@ -5,34 +5,35 @@ Component({
    */
   properties: {
     title: String,
-    latest: Boolean,
-    first: Boolean
+    first: Boolean,
+    latest: Boolean
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    disLeftSrc: "images/navi@left@white.png",
-    leftSrc: "images/navi@left@black.png",
-    disRightSrc: "images/navi@right@white.png",
-    rightSrc: "images/navi@right@black.png", 
+    disLeftSrc: 'images/triangle.dis@left.png',
+    leftSrc: 'images/triangle@left.png',
+    disRightSrc: 'images/triangle.dis@right.png',
+    rightSrc: 'images/triangle@right.png'
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    onLeft: function(event) {
+    onLeft: function (event) {
       if (!this.properties.latest) {
         this.triggerEvent('left', {}, {})
       }
     },
-    onRight: function(event) {
-      if (!this.properties.first) {
 
+    onRight: function (event) {
+      if (!this.properties.first) {
         this.triggerEvent('right', {}, {})
       }
     }
+
   }
 })
