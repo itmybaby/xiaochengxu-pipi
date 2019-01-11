@@ -3,6 +3,8 @@
     "pages/classic/classic",
     "pages/book/book",
     "pages/my/my",
+    "pages/about/about",
+    "pages/course/course",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
